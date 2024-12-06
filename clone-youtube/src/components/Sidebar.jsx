@@ -3,19 +3,19 @@ import React from 'react'
 import { categories } from '../utils/constants';
 
 const Sidebar = ({selectedCategory, setSelectedCategory}) => {
-  selectedCategory = "Home";
   return (
     <div id="sidebar">
       {
         categories.map((category) => {
           return (
             <button 
-              class="category-btn"
+              className="category-btn"
               style={{
                 background: category.name === selectedCategory && "#FC1503",
                 color: "white",
               }}
               key={category.name}
+              onClick={() => setSelectedCategory(category.name)}
             >
               <span style={{ color: category.name === selectedCategory ? "white" : "red", marginRight: "15px" }}>
                 {category.icon}

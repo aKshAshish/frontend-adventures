@@ -56,7 +56,6 @@ a {
     color: black;
 }
 
-
 /* Navbar CSS */
 .navbar {
     padding: 16px;
@@ -138,6 +137,11 @@ a {
     color: white;
 }
 
+.video-container {
+    margin-left: 16px;
+    flex: 2;
+}
+
 @media screen and (max-width: 600px) {
     #feed {
         flex-direction: column;
@@ -145,6 +149,10 @@ a {
 
     .copyright {
         display: none;
+    }
+
+    .video-container {
+        margin-right: 16px;
     }
 }
 
@@ -195,9 +203,53 @@ a {
     }
 }
 
-/* Video Container */
+/* Videos */
+#videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+}
 
-.video-container {
-    margin-left: 16px;
-    flex: 2;
+@media screen and (max-width: 600px) {
+    #videos {
+        justify-content: center;
+    }
+}
+
+/* Video Card */
+.video-card {
+    max-width: min-content;
+    background-color: #131313;
+}
+
+.video-card-detail {
+    display: flex;
+    flex-direction: row;
+    padding: 16px 4px;
+    margin: 0px;
+}
+
+.video-card-detail > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-card-thumbnail {
+    border-radius: 8px 8px 0 0;
+    max-width: 360px;
+    width: 360px;
+}
+
+/* Channel Card */
+.channel-card {
+    min-width: 360px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.channel-card-thumbnail {
+    border-radius: 90px;
 }

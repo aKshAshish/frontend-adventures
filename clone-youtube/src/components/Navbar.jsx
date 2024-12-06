@@ -6,7 +6,7 @@ import Searchbar from "./Searchbar";
 
 const Navbar = () => {
     return (
-        <div class="navbar">
+        <div className="navbar">
             <Link to={"/"} style={{display: "flex", alignItems: "center"}}>
                 <img src={logo} alt="logo" height={45} />
             </Link>
