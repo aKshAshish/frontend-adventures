@@ -10,7 +10,7 @@
 
 - **useState** :
 
-hook from react library provides a way to create state variables inside components. *useHook* returns a **state variable** and a **callback function** that can be used to update the value of the variable.
+hook provides a way to create state variables inside components. *useHook* returns a **state variable** and a **callback function** that can be used to update the value of the variable.
 
 > [!Note]
 > Everytime the value of the variable is updated react re-renders the component.
@@ -33,7 +33,7 @@ hook from react library provides a way to create state variables inside componen
 
 - **useEffect** :
 
-hook from react library provides a way to call the external APIs and update the states.
+hook provides a way to call the external APIs and update the states.
 
 - For the first time when component loads useEffect is called after the initial render.
 - useEffect will be called everytime if there is a change in the value of it's dependencies.
@@ -68,6 +68,7 @@ hook from react library provides a way to call the external APIs and update the 
 Custom hooks at the end of the day are nothing but simple function with one or more *states* in them.
  - Hooks are named starting with **use**.
  - Hooks can return anything state, callbacks, null etc.
+ - We can pass a return callback to useEffect to perform cleanup once the component is unmounted.
 
 Ex:-
 
